@@ -1,0 +1,32 @@
+{
+  "name": "kickstarter",
+  "version": "1.0.0",
+  "description": "A web app on ethereum",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "ganache-cli": "^6.4.5",
+    "mocha": "^6.1.4",
+    "next": "^4.1.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "solc": "^0.4.25",
+    "truffle-hdwallet-provider": "^1.0.14",
+    "web3": "^1.0.0-beta.46"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishurishabh/kickStarter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishurishabh/kickStarter/issues"
+  },
+  "homepage": "https://github.com/nishurishabh/kickStarter#readme"
+}
