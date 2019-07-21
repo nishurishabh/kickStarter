@@ -18,7 +18,7 @@ contract Campaign{
     struct Request {
         string description;
         uint value;
-        address recipient;
+        address payable recipient;
         bool complete;
         uint approvalCount;
         mapping(address => bool) approvals;
@@ -45,7 +45,7 @@ contract Campaign{
         approversCount++;
     }
     
-    function createRequest(string memory des, uint val, address rec) public restricted {
+    function createRequest(string memory des, uint val, address payable rec) public restricted {
         Request memory newRequest = Request({
             description: des,
             value: val,
@@ -76,5 +76,24 @@ contract Campaign{
         request.complete = true;
     }
     
+    function getSummary() public view returns (
+          uint, uint, uint, uint, address
+        ) {
+            
+            return (
+                minContribution,
+               address(this).balance,
+                requests.length,
+                approversCount,
+                manager
+                );
+        }
+        
+    function getRequestsCount() public view returns (uint) {
+        return requests.length;
+    }
+        
+        
+     
     
 }
