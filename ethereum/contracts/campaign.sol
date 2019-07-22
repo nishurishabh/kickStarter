@@ -82,7 +82,7 @@ contract Campaign{
             
             return (
                 minContribution,
-               address(this).balance,
+                address(this).balance,
                 requests.length,
                 approversCount,
                 manager
