@@ -5,7 +5,7 @@ import { Link } from '../routes';
 export default () => {
     return (<Menu style={{ marginTop: '10px'}}>
         <Link route='/'>
-          <a className='item'> KickStarter </a>
+          <a className='item'> KickStarter 2.0 </a>
         </Link>
         <Menu.Menu position='right'>
         <Link route='/'>
